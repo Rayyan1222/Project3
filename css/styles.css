@@ -1,22 +1,27 @@
 /* Global Styles */
 body {
-  font-family: 'Arial', sans-serif; /* Browser native font style */
-  background-color: #f0f0f0; /* Background color change */
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  width: 80%; /* Fluid layout using relative units */
-  margin: 0 auto; /* Center the container */
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Navigation */
+header {
+  background-color: #333;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center the navigation */
+  text-align: center;
+  background-color: #333;
 }
 
 nav ul li {
@@ -26,7 +31,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 
 /* Page-specific styles */
@@ -35,9 +40,8 @@ nav ul li a {
 .resume h3,
 .resume p,
 .resume ul,
-.resume li,
-.resume img {
-  text-align: center; /* Center text, images, and videos */
+.resume li {
+  text-align: center;
 }
 
 .Brady h1,
@@ -45,10 +49,8 @@ nav ul li a {
 .Brady h3,
 .Brady p,
 .Brady ul,
-.Brady li,
-.Brady img,
-.Brady iframe {
-  text-align: center; /* Center text, images, and videos */
+.Brady li {
+  text-align: center;
 }
 
 .animals h1,
@@ -56,33 +58,48 @@ nav ul li a {
 .animals h3,
 .animals p,
 .animals ul,
-.animals li,
-.animals img,
-.animals iframe {
-  text-align: center; /* Center text, images, and videos */
+.animals li {
+  text-align: center;
 }
 
 /* Different styles for sections */
-.resume {
-  background-color: #fff; /* Change background color */
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.Brady {
-  background-color: #f9f9f9; /* Change background color */
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
+.resume,
+.Brady,
 .animals {
-  background-color: #fcfcfc; /* Change background color */
+  background-color: #fff;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center images */
+.resume img,
+.Brady img,
+.animals img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Enable hover effect on images */
+.resume img:hover,
+.Brady img:hover,
+.animals img:hover {
+  opacity: 0.8;
+}
+
+/* Center YouTube video */
+.Brady iframe,
+.animals iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Adjust order of image and text in Brady section */
+.Brady div {
+  order: 2;
+}
+
+.Brady p {
+  order: 1;
 }
