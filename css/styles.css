@@ -1,7 +1,84 @@
-body {
-  background: linear-gradient(100deg, #cbd394, #78921d, #6f8817);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(100deg, #cbd394, #78921d, #6f8817);
+}
 
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.animals,
+.resume,
+.Brady {
+  margin-top: 20px;
+}
+
+.animals h1,
+.resume h1,
+.Brady h1 {
+  font-size: 2em; /* Relative unit: em */
+}
+
+.animals h2,
+.resume h2,
+.Brady h2 {
+  font-size: 1.5em; /* Relative unit: em */
+  color: #333;
+}
+
+.animals p,
+.resume p,
+.Brady p {
+  font-size: 1em; /* Relative unit: em */
+  color: #555;
+}
+
+.animals img,
+.resume img,
+.Brady img,
+.Brady iframe,
+.resume iframe {
+  width: 100%; /* Fluid width */
+  height: auto;
+  margin-top: 10px;
+}
+
+.resume ul,
+.Brady ul {
+  margin-left: 20px;
+}
+
+.resume ul li,
+.Brady ul li {
+  list-style-type: circle;
+  margin-bottom: 5px;
+}
+
+.resume h3,
+.Brady h3 {
+  font-size: 1.125em; /* Relative unit: em */
+  color: #333;
+}
 
