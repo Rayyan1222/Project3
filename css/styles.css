@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Browser native font style */
+  background-color: #f0f0f0; /* Background color change */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%; /* Fluid layout using relative units */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Center the navigation */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Page-specific styles */
+.resume h1,
+.resume h2,
+.resume h3,
+.resume p,
+.resume ul,
+.resume li,
+.resume img {
+  text-align: center; /* Center text, images, and videos */
+}
+
+.Brady h1,
+.Brady h2,
+.Brady h3,
+.Brady p,
+.Brady ul,
+.Brady li,
+.Brady img,
+.Brady iframe {
+  text-align: center; /* Center text, images, and videos */
+}
+
+.animals h1,
+.animals h2,
+.animals h3,
+.animals p,
+.animals ul,
+.animals li,
+.animals img,
+.animals iframe {
+  text-align: center; /* Center text, images, and videos */
+}
+
+/* Different styles for sections */
+.resume {
+  background-color: #fff; /* Change background color */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Brady {
+  background-color: #f9f9f9; /* Change background color */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.animals {
+  background-color: #fcfcfc; /* Change background color */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
