@@ -1,89 +1,100 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(100deg, #cbd394, #78921d, #6f8817);
+  background: rgb(181, 137, 214);
+  font-family: 'Arial', Heveltica, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+  color: rgb(128, 0, 32);
+}
+
+.resume h1, .resume h2 {
+  text-align: left;
+}
+
+.resume p, .resume ul li {
+  text-align: left;
+}
+
+li, p {
+  list-style-type: none;
+  font-family: 'Trebuchet MS',  'Lucida Grande', Lucida Sans, sans-serif;
+  text-align: center;
 }
 
 header {
   background-color: #333;
-  color: white;
-  padding: 10px;
-  text-align: center; /* Centering the content in the header */
+  color: #fff;
+  padding: 1em 0;
 }
 
 nav ul {
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
+
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 20px;
+  float: right;
 }
 
-nav a {
+nav ul li a {
+  color: #fff;
   text-decoration: none;
-  color: white;
 }
 
-.animals,
-.resume,
-.Brady {
-  margin-top: 20px;
-  text-align: center; /* Centering the content in each section */
+nav ul li a:hover {
+  color: #ffd700;
 }
 
-.animals h1,
-.resume h1,
-.Brady h1 {
-  font-size: 2em; /* Relative unit: em */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.animals h2,
-.resume h2,
-.Brady h2 {
-  font-size: 1.5em; /* Relative unit: em */
-  color: #333;
+.resume, .Brady, .animals {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
 }
 
-.animals p,
-.resume p,
-.Brady p {
-  font-size: 1em; /* Relative unit: em */
-  color: #555;
+img {
+  display: block;
+  margin: 20px auto;
+  width: 31.25em;
+  height: 18.75em;
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
-.animals img,
-.resume img,
-.Brady img,
-.Brady iframe,
-.resume iframe {
-  max-width: 100%; /* Fluid width */
-  height: auto;
-  margin-top: 10px;
-  display: block; /* Center the image */
-  margin-left: auto;
-  margin-right: auto;
+img:hover {
+  transform: scale(1.05);
 }
 
-.resume ul,
-.Brady ul {
-  margin-left: 20px;
+iframe {
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  position: relative; 
 }
 
-.resume ul li,
-.Brady ul li {
-  list-style-type: circle;
-  margin-bottom: 5px;
-}
-
-.resume h3,
-.Brady h3 {
-  font-size: 1.125em; /* Relative unit: em */
-  color: #333;
+iframe:hover {
+  transform: scale(1.1);
 }
 
